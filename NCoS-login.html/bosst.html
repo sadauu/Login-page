@@ -1,0 +1,129 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Background Colors</title>
+    <link rel="stylesheet" href="">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="p-5 mb-3 bg-primary text-white">Primary Background</div>
+        <div class="p-5 mb-3 bg-secondary text-white">Secondary Background</div>
+        <div class="p-5 mb-3 bg-success text-white">Success Background</div>
+        <div class="p-5 mb-3 bg-danger text-white">Danger Background</div>
+        <div class="p-5 mb-3 bg-warning text-dark">Warning Background</div>
+        <div class="p-5 mb-3 bg-info text-white">Info Background</div>
+        <div class="p-5 mb-3 bg-light text-dark">Light Background</div>
+        <div class="p-5 mb-3 bg-dark text-white">Dark Background</div>
+        <div class="p-5 mb-3 bg-white text-dark">White Background</div>
+    </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    }
+
+    #carouselBackground {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .carousel-inner img {
+        height: 100vh;
+        object-fit: cover;
+        filter: brightness(50%);
+    }
+
+    .login-container {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        z-index: 1;
+    }
+
+    .login-form {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-form h2 {
+        margin-bottom: 20px;
+    }
+
+    .login-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    .btn-block {
+        margin-top: 20px;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="carouselBackground" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/about.jpg" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/background.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/certificate.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+        </div>
+    </div>
+
+    <div class="login-container d-flex justify-content-center align-items-center">
+        <div class="login-form p-4">
+            <h2 class="text-center">Login</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

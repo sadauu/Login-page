@@ -1,0 +1,89 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    
+}
+
+/*     news alert             */
+.alert-overlay {
+    justify-content: center;
+    top: 0;
+    align-items: center;
+    margin: auto;
+    /* Higher than .card */
+    width: 100%;
+    max-width: 650px;
+    /* Adjust based on your form width */
+}
+
+
+
+/*       rotating image        */
+.perspective {
+    width: 17.5rem;
+    height: 17.5rem;
+    perspective: 37.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-45deg);
+    animation: rotate 7s infinite linear;
+    filter: drop-shadow(1px 1px 30px rgb(109, 223, 23));
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateX(-30deg) rotateY(-45deg);
+    }
+
+    to {
+        transform: rotateX(-30deg) rotateY(315deg);
+    }
+}
+
+.bean{
+    width: 100%;
+    height: 100%;
+}
+
+/*       row columns       */
+.row{
+    cursor: pointer;
+    
+}
+.words{
+    backdrop-filter: blur(10px);
+}
+/*     carousel background      */
+ #carouselBackground {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+ }
+
+ .carousel-inner img {
+     height: 110vh;
+     object-fit: cover;
+     filter: brightness(50%);
+ }
+
+ /*       login form    */
+ .card-header strong{
+    font-weight: bolder;
+     font-size: 23px;
+ }
